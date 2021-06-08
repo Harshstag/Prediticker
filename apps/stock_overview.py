@@ -149,7 +149,7 @@ def app():
     
     with kpi6:
         st.markdown("**P/B RATIO**")
-        number6 = str(round(stock.info['priceToBook'],2)) 
+        number6 = str(stock.info['priceToBook']) 
         st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number6}**</h>", unsafe_allow_html=True)
     
     with kpi7:
@@ -159,7 +159,7 @@ def app():
 
     with kpi8:
         st.markdown("**BOOK VALUE**")
-        number8 = str(stock.info['bookValue']) 
+        number8 = str((stock.info['bookValue'],2)) 
         st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number8}**</h>", unsafe_allow_html=True)
 
     with kpi9:
