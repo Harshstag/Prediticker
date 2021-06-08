@@ -155,7 +155,7 @@ def app():
             st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
         else:
              st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number6}**</h>", unsafe_allow_html=True)
-    
+
     with kpi7:
         st.markdown("**E ON QTR GROTH**")
         number7 = str(stock.info['earningsQuarterlyGrowth']) 
@@ -163,8 +163,12 @@ def app():
 
     with kpi8:
         st.markdown("**BOOK VALUE**")
-        number8 = str((stock.info['bookValue'],2)) 
-        st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number8}**</h>", unsafe_allow_html=True)
+        try:
+            number8 = str(round(stock.info['bookValue'],2)) 
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number8}**</h>", unsafe_allow_html=True)
 
     with kpi9:
         st.markdown("**TRAILING  EPS**")
