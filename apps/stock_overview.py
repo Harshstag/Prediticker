@@ -149,11 +149,12 @@ def app():
     
     with kpi6:
         st.markdown("**P/B RATIO**")
-        number6 = str(stock.info['priceToBook'])
-        if number6 != None:
+        try:
             number6 = str(round(stock.info['priceToBook'],2))
         st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number6}**</h>", unsafe_allow_html=True)
-    
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+
     with kpi7:
         st.markdown("**E ON QTR GROTH**")
         number7 = str(stock.info['earningsQuarterlyGrowth']) 
