@@ -66,7 +66,7 @@ def app():
                 cptitlezerodha = Image.open('Images/cptitlezerodha.PNG')
                 st.image(cptitlezerodha, caption=' ')
 
-                st.info(f"""**Dilevry equity**""")
+                st.info(f"""**Delivery equity**""")
                     
                 buy2 = st.number_input("BUY   ", min_value=0, max_value=10000, value=1000) 
                 sell2 = st.number_input("SELL   ", min_value=0, max_value=10000, value=1100)
@@ -105,7 +105,7 @@ def app():
             if option == 'Upstox.':
                 cpupstox = Image.open('Images/cpupstox.PNG')
                 st.image(cpupstox, caption=' ')
-                st.info(f"""**Dilevry equity**""")
+                st.info(f"""**Delivery equity**""")
               
                 buy2 = st.number_input("BUY     ", min_value=0, max_value=10000, value=1000) 
                 sell2 = st.number_input("SELL     ", min_value=0, max_value=10000, value=1100)
@@ -145,7 +145,7 @@ def app():
                 cpgroww = Image.open('Images/cpgroww.PNG')
                 st.image(cpgroww, caption=' ')
 
-                st.info(f"""**Dilevry equity**""")
+                st.info(f"""**Delivery equity**""")
               
                 buy2 = st.number_input("BUY       ", min_value=0, max_value=10000, value=1000) 
                 sell2 = st.number_input("SELL       ", min_value=0, max_value=10000, value=1100)
@@ -193,7 +193,7 @@ def app():
                     cptitlezerodha = Image.open('Images/cptitlezerodha.PNG')
                     st.image(cptitlezerodha, caption=' ')
 
-                    st.info(f"""**Dilevry equity**""")
+                    st.info(f"""**Delivery equity**""")
            
                     buy2 = st.number_input("BUY    ", min_value=0, max_value=10000, value=1000) 
                     sell2 = st.number_input("SELL    ", min_value=0, max_value=10000, value=1100)
@@ -233,7 +233,7 @@ def app():
                     cpupstox = Image.open('Images/cpupstox.PNG')
                     st.image(cpupstox, caption=' ')
 
-                    st.info(f"""**Dilevry equity**""")
+                    st.info(f"""**Delivery equity**""")
          
                     buy2 = st.number_input("BUY      ", min_value=0, max_value=10000, value=1000) 
                     sell2 = st.number_input("SELL      ", min_value=0, max_value=10000, value=1100)
@@ -273,7 +273,7 @@ def app():
                     cpgroww = Image.open('Images/cpgroww.PNG')
                     st.image(cpgroww, caption=' ')
 
-                    st.info(f"""**Dilevry equity**""")
+                    st.info(f"""**Delivery equity**""")
                  
                     buy2 = st.number_input("BUY        ", min_value=0, max_value=10000, value=1000) 
                     sell2 = st.number_input("SELL        ", min_value=0, max_value=10000, value=1100)
@@ -561,8 +561,8 @@ def app():
                 
             st.markdown(f"""<hr/>""", unsafe_allow_html=True)         
 
-            with second_kpi:  ##  dilevry equity 
-                st.info(f"""**Dilevry equity**""")
+            with second_kpi:  ##  Delivery equity 
+                st.info(f"""**Delivery equity**""")
                 st.markdown("<hr/>", unsafe_allow_html=True)
                 buy2 = st.number_input("BUY ", min_value=0, max_value=10000, value=1000) 
                 sell2 = st.number_input("SELL ", min_value=0, max_value=10000, value=1100)
@@ -968,8 +968,8 @@ def app():
                 
             st.markdown(f"""<hr/>""", unsafe_allow_html=True)         
 
-            with second_kpi:  ##  dilevry equity 
-                st.info(f"""**Dilevry equity**""")
+            with second_kpi:  ##  Delivery equity 
+                st.info(f"""**Delivery equity**""")
                 st.markdown("<hr/>", unsafe_allow_html=True)
                 buy2 = st.number_input("BUY ", min_value=0, max_value=10000, value=1000) 
                 sell2 = st.number_input("SELL ", min_value=0, max_value=10000, value=1100)
@@ -1372,8 +1372,8 @@ def app():
                 
             st.markdown(f"""<hr/>""", unsafe_allow_html=True)         
 
-            with second_kpi:  ##  dilevry equity 
-                st.info(f"""**Dilevry equity**""")
+            with second_kpi:  ##  Delivery equity 
+                st.info(f"""**Delivery equity**""")
                 st.markdown("<hr/>", unsafe_allow_html=True)
                 buy2 = st.number_input("BUY ", min_value=0, max_value=10000, value=1000) 
                 sell2 = st.number_input("SELL ", min_value=0, max_value=10000, value=1100)
