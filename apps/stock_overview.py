@@ -154,7 +154,7 @@ def app():
     
     with kpi7:
         st.markdown("**E ON QTR GROTH**")
-        number7 = str(round(stock.info['earningsQuarterlyGrowth'],2)) 
+        number7 = str(stock.info['earningsQuarterlyGrowth']) 
         st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number7}**</h>", unsafe_allow_html=True)
 
     with kpi8:
