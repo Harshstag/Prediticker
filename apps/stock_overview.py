@@ -159,7 +159,7 @@ def app():
 
     with kpi8:
         st.markdown("**BOOK VALUE**")
-        number8 = str(round(stock.info['bookValue'],2)) 
+        number8 = str(stock.info['bookValue']) 
         st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number8}**</h>", unsafe_allow_html=True)
 
     with kpi9:
