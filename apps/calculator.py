@@ -55,7 +55,7 @@ def app():
         st.image(calculatorbg, caption=' ')
 
     if option == 'Compare Online Broker':
-        comparetitle = Image.open('Images/comparetitle.PNG')
+        comparetitle = Image.open('Images/comparetitle.png')
         st.image(comparetitle, caption=' ')
 
         cpi1, cpi2 = st.beta_columns([1,1])
