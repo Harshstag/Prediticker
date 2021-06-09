@@ -63,7 +63,7 @@ def retrieve_business_news(category="business"):
 		news_images.append(arti['urlToImage'])
 
 	if not news_articles:
-		st.header("no headlines")
+		st.header("No headlines for now!")
 	else:
 		for i in range(len(news_articles)):
 			st.markdown("## "+news_articles[i])
@@ -96,7 +96,7 @@ def retrieve_category_news(url):
 		news_images.append(arti['urlToImage'])
 
 	if not news_articles:
-		st.header("no headlines")
+		st.header("No headlines for now!")
 	else:
 		for i in range(len(news_articles)):
 			st.markdown("## "+news_articles[i])
