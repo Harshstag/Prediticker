@@ -19,6 +19,7 @@ def app():
 			st.write(message['user']['username'])
 			st.write(message['created_at'])
 			st.write(message['body'])
+			st.markdown("&nbsp")
 	except:
 		st.error("Invalid Ticker")
 		

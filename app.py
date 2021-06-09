@@ -11,7 +11,7 @@ app.add_app("Stock Overview", stock_overview.app)
 app.add_app("Prediction", prediction.app)
 app.add_app("Brokrage Calculator", calculator.app)
 app.add_app("News & More", news_module.app)
-app.add_app("Stocktwit", stockTwit.app)
+app.add_app("Stock Tweets", stockTwit.app)
 
 
 app.run()
