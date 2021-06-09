@@ -12,21 +12,16 @@ def app():
 		r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
 
 	data = r.json()
-	i = 0;
-	col = [];
-	#try:
-	for message in data['messages']:
-		col[i], col[i+1] = st.beta_columns[(1,3)]
-		with col[i]:
+
+	try:
+		for message in data['messages']:
 			st.image(message['user']['avatar_url'])
-		with col[i+1]:
 			st.write(message['user']['username'])
-		st.write(message['created_at'])
-		st.write(message['body'])
-		i = i +1
-		st.markdown("&nbsp")
-	# except:
-	# 	st.error("Invalid Ticker")
+			st.write(message['created_at'])
+			st.write(message['body'])
+			st.markdown("&nbsp")
+	except:
+		st.error("Invalid Ticker")
 		
 		
 
