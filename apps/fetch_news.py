@@ -26,7 +26,7 @@ def retrieve_news(company_name,company_ticker):
 		news_images.append(arti['urlToImage'])
 
 	if not news_articles:
-		st.header("no headlines")
+		st.header("No headlines for now!")
 	else:
 		for i in range(len(news_articles)):
 			my_expand = st.beta_expander(news_articles[i],False)
