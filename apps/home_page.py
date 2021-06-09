@@ -54,10 +54,6 @@ def app():
 	def write_data(component):
 
 
-		 
-
-		
-
 		shortname = (str(component['shortName']))
 		marketstate = component['marketState']
 		regularmarketprice = str(round(component['regularMarketPrice'],2))
@@ -72,11 +68,7 @@ def app():
 
 
 		if component['regularMarketChange'] > 0:
-
-
-
-
-			
+	
 
 			st.markdown(f"<h style='text-align: center; font-size:20px; color: green; '>**{shortname}**</h>", unsafe_allow_html=True)
 			st.markdown(f"<h style='text-align: center; font-size:40px; color: green; '>**{regularmarketprice}**</h>", unsafe_allow_html=True)
@@ -87,14 +79,7 @@ def app():
 			st.markdown(f"<h style='text-align: center; font-size:20px; color: red; '>**{shortname}**</h>", unsafe_allow_html=True)
 			st.markdown(f"<h style='text-align: center; font-size:40px; color: red; '>**{regularmarketprice}**</h>", unsafe_allow_html=True)
 			st.markdown(f"<h style='text-align: center; font-size:20px; color: red; '>**{marketstate} : {regularMarketChange} / {Changepercent}%**  </h>", unsafe_allow_html=True)  
-			
 
-	
-	
-	
-	
-	
-	
 	col1, col2, col3 = st.beta_columns(3)
 
 
