@@ -14,19 +14,19 @@ def app():
 	data = r.json()
 	i = 0;
 	col = [];
-	try:
-		for message in data['messages']:
-			col[i], col[i+1] = st.beta_columns[(1,3)]
-			with col[i]:
-				st.image(message['user']['avatar_url'])
-			with col[i+1]:
-				st.write(message['user']['username'])
-			st.write(message['created_at'])
-			st.write(message['body'])
-			i = i +1
-			st.markdown("&nbsp")
-	except:
-		st.error("Invalid Ticker")
+	#try:
+	for message in data['messages']:
+		col[i], col[i+1] = st.beta_columns[(1,3)]
+		with col[i]:
+			st.image(message['user']['avatar_url'])
+		with col[i+1]:
+			st.write(message['user']['username'])
+		st.write(message['created_at'])
+		st.write(message['body'])
+		i = i +1
+		st.markdown("&nbsp")
+	# except:
+	# 	st.error("Invalid Ticker")
 		
 		
 
