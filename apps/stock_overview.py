@@ -172,13 +172,21 @@ def app():
 
     with kpi9:
         st.markdown("**TRAILING  EPS**")
-        number9 = str(round(stock.info['trailingEps'],2)) 
-        st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number9}**</h>", unsafe_allow_html=True)
+        try:
+            number9 = str(round(stock.info['trailingEps'],2))
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number9}**</h>", unsafe_allow_html=True)
 
     with kpi10:
         st.markdown("**FORWARD EPS**")
-        number10 = (str(stock.info['forwardEps'])) 
-        st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number10}**</h>", unsafe_allow_html=True)
+        try:
+            number10 = (str(stock.info['forwardEps'])) 
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**{number10}**</h>", unsafe_allow_html=True)
 
     st.markdown("<hr/>",unsafe_allow_html=True)
 
@@ -190,23 +198,39 @@ def app():
     kpi11, kpi12, kpi13, kpi14 = st.beta_columns(4)
     with kpi11:
         st.markdown("**MARKET CAP**")
-        number11 = str(round(stock.info['marketCap'],2)) 
-        st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number11}**</h>", unsafe_allow_html=True)
+        try:
+            number11 = str(round(stock.info['marketCap'],2)) 
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number11}**</h>", unsafe_allow_html=True)
 
     with kpi12:
         st.markdown("**SECTOR**")
-        number12 = stock.info['sector'] 
-        st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number12}**</h>", unsafe_allow_html=True)
+        try:
+            number12 = stock.info['sector'] 
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number12}**</h>", unsafe_allow_html=True)
 
     with kpi13:
         st.markdown("**QUOTE TYPE**")
-        number13 = stock.info['quoteType'] 
-        st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number13}**</h>", unsafe_allow_html=True)
+        try:
+            number13 = stock.info['quoteType'] 
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number13}**</h>", unsafe_allow_html=True)
     
     with kpi14:
         st.markdown("**INDUSTRY**")
-        number14 = stock.info['industry'] 
-        st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number14}**</h>", unsafe_allow_html=True)
+        try:
+            number14 = stock.info['industry'] 
+        except:
+            st.markdown(f"<h style='text-align: center; font-size:40px; color:#0078ff; '>**None**</h>", unsafe_allow_html=True)
+        else:
+            st.markdown(f"<h style='text-align: center; font-size:20px; color:#0078ff; '>**{number14}**</h>", unsafe_allow_html=True)
     
 
 
