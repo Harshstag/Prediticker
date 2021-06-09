@@ -16,12 +16,12 @@ def app():
 	try:
 		for message in data['messages']:
 			st.image(message['user']['avatar_url'])
-			st.write(message['user']['username'])
+			st.markdown("#"+message['user']['username'])
 			st.write(message['created_at'])
 			st.write(message['body'])
 			st.markdown("&nbsp")
 	except:
-		st.error("Invalid Ticker")
+		st.error("No tweets available!")
 		
 		
 
