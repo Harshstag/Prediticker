@@ -345,7 +345,7 @@ def app():
                  st.markdown(" ")
 
             with kpi002:
-                selected_stock = st.text_input("Enter Stock","PERSISTENT.NS")
+                selected_stock = st.text_input("Enter Stock","MSFT")
 
             with kpi003:
        
@@ -752,7 +752,7 @@ def app():
                  st.markdown(" ")
 
             with kpi002:
-                selected_stock = st.text_input("Enter Stock","TCS.NS")
+                selected_stock = st.text_input("Enter Stock","TCS")
 
             with kpi003:
        
@@ -1145,7 +1145,7 @@ def app():
                  st.markdown(" ")
 
             with kpi002:
-                selected_stock = st.text_input("Enter Stock","IRFC.NS")
+                selected_stock = st.text_input("Enter Stock","MSFT")
 
             with kpi003:
        
