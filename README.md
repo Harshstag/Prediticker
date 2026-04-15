@@ -141,16 +141,11 @@ streamlit run app.py
 
 ---
 
-## 🤝 Contributing
+## 🤝 Credits
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+- **Harsh Singh** ([@Harshstag](https://github.com/Harshstag))
+- **Yash** ([@bigdwarf43](https://github.com/bigdwarf43))
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-  Built with ❤️ by the PrediTicker Team
-</div>
